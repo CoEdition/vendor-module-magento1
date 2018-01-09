@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Coedition_Vendor>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Catalog/>
+            </depends>
+        </Coedition_Vendor>
+    </modules>
+</config>

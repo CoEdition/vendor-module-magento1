@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <coedition_vendor_product translate="title" module="vendor">
+                <model>coedition_vendor/product_api</model>
+                <title>Configurable Product Items API</title>
+                <methods>
+                    <configurableChildren>
+                        <title>Get the configurable children for a product</title>
+                        <method>configurableChildren</method>
+                    </configurableChildren>
+                </methods>
+                <faults module="vendor">
+                    <product_not_exists>
+                        <code>100</code>
+                        <message>Product not exists.</message>
+                    </product_not_exists>
+                    <product_not_configurable>
+                        <code>101</code>
+                        <message>Product is not configurable.</message>
+                    </product_not_configurable>
+                </faults>
+            </coedition_vendor_product>
+        </resources>
+        <resources_alias>
+            <coedition_vendor_product>coedition_vendor_product</coedition_vendor_product>
+        </resources_alias>
+        <v2>
+            <resources_function_prefix>
+                <coedition_vendor_product>coeditionVendorProduct</coedition_vendor_product>
+            </resources_function_prefix>
+        </v2>
+    </api>
+</config>
