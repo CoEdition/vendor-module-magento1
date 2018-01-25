@@ -10,6 +10,10 @@ class Coedition_Vendor_Model_Product_Api extends Mage_Catalog_Model_Api_Resource
         }
         $type = $product->getTypeInstance();
         $res = $type->getChildrenIds($product->getId())[0];
-        return array_values($res);
+
+        return [
+            'productIds' => array_values($res),
+            'configurableAttributes' => $type->getConfigurableAttributesAsArray()
+        ];
     }
 }
