@@ -1,3 +1,4 @@
+# For Help with this installation, please contact connectorsupport@coedition.com 
 # Magento1 Vendor Module
 
 The Coedition Vendor module for magento1 handles the integration for coedition marketplace vendors.
