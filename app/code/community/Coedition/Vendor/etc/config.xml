@@ -12,9 +12,40 @@
             </coedition_vendor>
         </models>
         <helpers>
-            <vendor>
+            <coedition_vendor>
                 <class>Coedition_Vendor_Helper</class>
-            </vendor>
+            </coedition_vendor>
         </helpers>
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <coedition_vendor>
+                        <type>singleton</type>
+                        <class>coedition_vendor/observer</class>
+                        <method>catalog_product_save_after</method>
+                    </coedition_vendor>
+                </observers>
+            </catalog_product_save_after>
+            <sales_order_shipment_save_after>
+                <observers>
+                    <coedition_vendor>
+                        <type>singleton</type>
+                        <class>coedition_vendor/observer</class>
+                        <method>sales_order_shipment_save_after</method>
+                    </coedition_vendor>
+                </observers>
+            </sales_order_shipment_save_after>
+        </events>
     </global>
+    <frontend>
+        <routers>
+            <coedition_vendor>
+                <use>standard</use>
+                <args>
+                    <module>Coedition_Vendor</module>
+                    <frontName>coedition-vendor</frontName>
+                </args>
+            </coedition_vendor>
+        </routers>
+    </frontend>
 </config>

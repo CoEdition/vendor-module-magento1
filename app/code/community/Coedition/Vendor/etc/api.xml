@@ -7,7 +7,7 @@
                 <title>Configurable Product Items API</title>
                 <methods>
                     <configurableChildren>
-                        <title>Get the configurable children for a product</title>
+                        <title>Get the configurable children and attributes for a product</title>
                         <method>configurableChildren</method>
                     </configurableChildren>
                 </methods>
