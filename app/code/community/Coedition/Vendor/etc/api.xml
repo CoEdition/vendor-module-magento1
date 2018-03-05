@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
 <config>
     <api>
+        <adapters>
+            <coedition_soap_v2>
+                <model>coedition_vendor/server_v2_adapter_soap</model>
+                <handler>coedition_soap_v2</handler>
+                <active>1</active>
+                <required>
+                    <extensions>
+                        <soap />
+                    </extensions>
+                </required>
+            </coedition_soap_v2>
+        </adapters>
         <resources>
             <coedition_vendor_product translate="title" module="vendor">
                 <model>coedition_vendor/product_api</model>

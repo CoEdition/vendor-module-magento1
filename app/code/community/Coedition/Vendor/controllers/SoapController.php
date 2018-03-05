@@ -11,13 +11,8 @@ class Coedition_Vendor_SoapController extends Mage_Api_Controller_Action
 {
     public function indexAction()
     {
-        // force non-wsi compliance
-        Mage::app()->getStore()->setConfig(Mage_Api_Helper_Data::XML_PATH_API_WSI, false);
-
-        $handler_name = 'soap_v2';
-
         /* @var $server Mage_Api_Model_Server */
-        $this->_getServer()->init($this, $handler_name, $handler_name)
+        $this->_getServer()->init($this, 'coedition_soap_v2', 'soap_v2')
             ->run();
     }
 }
