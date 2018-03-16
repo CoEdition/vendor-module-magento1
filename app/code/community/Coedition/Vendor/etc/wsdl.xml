@@ -48,6 +48,11 @@
                     <element name="order" type="xsd:int"/>
                 </all>
             </complexType>
+            <complexType name="shoppingCartProductEntity">
+                <all>
+                    <element name="super_attribute" type="typens:associativeArray" minOccurs="0"/>
+                </all>
+            </complexType>
         </schema>
     </types>
     <message name="coeditionVendorProductConfigurableChildrenRequest">

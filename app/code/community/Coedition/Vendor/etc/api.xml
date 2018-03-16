@@ -14,7 +14,7 @@
             </coedition_soap_v2>
         </adapters>
         <resources>
-            <coedition_vendor_product translate="title" module="vendor">
+            <coedition_vendor_product translate="title" module="coedition_vendor">
                 <model>coedition_vendor/product_api</model>
                 <title>Configurable Product Items API</title>
                 <methods>
@@ -23,7 +23,7 @@
                         <method>configurableChildren</method>
                     </configurableChildren>
                 </methods>
-                <faults module="vendor">
+                <faults module="coedition_vendor">
                     <product_not_exists>
                         <code>100</code>
                         <message>Product not exists.</message>
