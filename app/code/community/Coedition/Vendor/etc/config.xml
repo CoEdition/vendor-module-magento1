@@ -48,4 +48,16 @@
             </coedition_vendor>
         </routers>
     </frontend>
+    <default>
+        <payment>
+            <coedition>
+                <active>1</active>
+                <model>coedition_vendor/method_coedition</model>
+                <order_status>pending</order_status>
+                <title>Coedition</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </coedition>
+        </payment>
+    </default>
 </config>

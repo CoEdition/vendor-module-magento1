@@ -1,4 +1,4 @@
-# For Help with this installation, please contact connectorsupport@coedition.com 
+# For Help with this installation, please contact connectorsupport@coedition.com
 # Magento1 Vendor Module
 
 The Coedition Vendor module for magento1 handles the integration for coedition marketplace vendors.
@@ -6,6 +6,10 @@ The Coedition Vendor module for magento1 handles the integration for coedition m
 ## Configurable Product API Extension
 
 This extension adds a new soap endpoint named `coeditionVendorProductConfigurableChildren($sessionId, $productId)` which returns an array of the configurable product children product ids and the configurable attributes.
+
+## Coedition Payment Method
+
+It also adds a new offline payment method named `coedition`. It's only visible from the API/Admin and is not usable from the frontend.
 
 ## Installation
 
